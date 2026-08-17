@@ -7,4 +7,18 @@ const form=d.querySelector('form[data-contact]');if(form){const lang=d.documentE
 const key=body.dataset.route,lang=d.documentElement.lang||'de',routeMap={
 'home':{'de':'/','en':'/en/','hr':'/hr/'},'about':{'de':'/ueber-uns/','en':'/en/about/','hr':'/hr/o-nama/'},'approach':{'de':'/ueber-uns/arbeitsweise/','en':'/en/about/approach/','hr':'/hr/o-nama/nacin-rada/'},'services':{'de':'/leistungen/','en':'/en/services/','hr':'/hr/usluge/'},'consulting':{'de':'/leistungen/hospitality-consulting/','en':'/en/services/hospitality-consulting/','hr':'/hr/usluge/hospitality-consulting/'},'training':{'de':'/leistungen/mitarbeiterschulung/','en':'/en/services/staff-training/','hr':'/hr/usluge/edukacija-zaposlenika/'},'fb':{'de':'/leistungen/f-and-b-management/','en':'/en/services/f-and-b-management/','hr':'/hr/usluge/f-and-b-management/'},'standards':{'de':'/leistungen/service-standards/','en':'/en/services/service-standards/','hr':'/hr/usluge/standardi-usluge/'},'preopening':{'de':'/leistungen/pre-opening-beratung/','en':'/en/services/pre-opening-consulting/','hr':'/hr/usluge/pre-opening-savjetovanje/'},'development':{'de':'/leistungen/business-development/','en':'/en/services/business-development/','hr':'/hr/usluge/razvoj-poslovanja/'},'industries':{'de':'/branchen/','en':'/en/industries/','hr':'/hr/sektori/'},'hotels':{'de':'/branchen/hotels/','en':'/en/industries/hotels/','hr':'/hr/sektori/hoteli/'},'restaurants':{'de':'/branchen/restaurants/','en':'/en/industries/restaurants/','hr':'/hr/sektori/restorani/'},'bars':{'de':'/branchen/bars/','en':'/en/industries/bars/','hr':'/hr/sektori/barovi/'},'process':{'de':'/ablauf/','en':'/en/process/','hr':'/hr/proces/'},'references':{'de':'/referenzen/','en':'/en/references/','hr':'/hr/reference/'},'contact':{'de':'/kontakt/','en':'/en/contact/','hr':'/hr/kontakt/'},'imprint':{'de':'/impressum/','en':'/en/imprint/','hr':'/hr/impressum/'},'privacy':{'de':'/datenschutz/','en':'/en/privacy/','hr':'/hr/privatnost/'}};
 if(key&&routeMap[key])d.querySelectorAll('[data-lang]').forEach(a=>{const l=a.dataset.lang;a.href=routeMap[key][l];a.classList.toggle('active',l===lang);if(l===lang)a.setAttribute('aria-current','page')});d.querySelectorAll('[data-lang]').forEach(a=>a.addEventListener('click',()=>localStorage.setItem('mb-lang',a.dataset.lang)));
+
+const siteIntro=d.querySelector('.site-intro');
+if(siteIntro){
+  const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const alreadySeen=d.documentElement.classList.contains('intro-seen');
+  if(reduceMotion||alreadySeen){siteIntro.remove();body.classList.remove('intro-active')}
+  else{
+    body.classList.add('intro-active');
+    requestAnimationFrame(()=>requestAnimationFrame(()=>siteIntro.classList.add('is-live')));
+    try{sessionStorage.setItem('mbh-premium-intro-v1','1')}catch(e){}
+    setTimeout(()=>siteIntro.classList.add('is-leaving'),2350);
+    setTimeout(()=>{siteIntro.remove();body.classList.remove('intro-active')},3100);
+  }
+}
 })();
