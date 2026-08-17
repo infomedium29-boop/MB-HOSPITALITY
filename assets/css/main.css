@@ -679,3 +679,14 @@ body.intro-active{overflow:hidden}
 @keyframes introRule{to{transform:scaleX(1)}}
 @media(max-width:720px){.site-intro__inner{width:min(88vw,620px)}.site-intro__logo{width:min(84vw,510px)}.site-intro__tag{letter-spacing:.20em;margin-top:20px}.site-intro__rule--top{margin-bottom:22px}.site-intro__rule--bottom{margin-top:20px}}
 @media(prefers-reduced-motion:reduce){.site-intro{display:none!important}}
+
+/* Final contrast safeguard for all dark CTA sections */
+.cta-band.dark .cta-copy h2,
+.cta-band.dark h2{
+  color:#fff3e6!important;
+  opacity:1!important;
+  -webkit-text-fill-color:#fff3e6!important;
+}
+.cta-band.dark .cta-copy .eyebrow{color:#d9bb91!important}
+.cta-band.dark .cta-copy .lede{color:#d8d0c8!important}
+.cta-band.dark .cta-copy{color:#f4eadc!important}
