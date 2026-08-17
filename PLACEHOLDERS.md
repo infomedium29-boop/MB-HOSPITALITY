@@ -27,4 +27,4 @@
 - final legal review of Impressum and privacy wording after the company is formally established
 
 ## Production domain
-Global-replace `https://mb-hospitality.example` with the final canonical domain in HTML, `sitemap.xml`, `robots.txt` and OG metadata before Search Console indexing.
+Global-replace `https://mb-hospitality.pages.dev` with the final canonical domain in HTML, `sitemap.xml`, `robots.txt` and OG metadata before Search Console indexing.

@@ -9,7 +9,7 @@
 6. Deploy. Cloudflare will read `_headers` and `_redirects` automatically.
 
 ## Required before production / indexing
-- Replace `https://mb-hospitality.example` everywhere with the final domain.
+- Replace `https://mb-hospitality.pages.dev` everywhere with the final domain.
 - Fill every `{{PLACEHOLDER}}` listed in `PLACEHOLDERS.md`.
 - Have the Austrian Impressum and privacy wording checked against the final legal/company status and contracts.
 - Replace the placeholder `assets/img/logo.svg` with the final logo while preserving the filename.
