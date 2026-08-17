@@ -144,7 +144,7 @@ p{margin-top:0}
 }
 
 body{line-height:var(--lh-body)}
-main h1,main h2,main h3{overflow-wrap:break-word;hyphens:auto;text-wrap:balance}
+main h1,main h2,main h3{overflow-wrap:normal;word-break:normal;hyphens:none;-webkit-hyphens:none;text-wrap:balance}
 main h1{line-height:var(--lh-display);letter-spacing:-.022em}
 main h2{line-height:var(--lh-heading);letter-spacing:-.02em;max-width:20ch}
 main h3{line-height:1.2;letter-spacing:-.015em}
@@ -273,3 +273,6 @@ main h3 + p{margin-top:var(--text-gap-sm)}
   .page-head h1{font-size:clamp(2.65rem,13vw,3.65rem);line-height:1.09}
   .empty-state h2{font-size:2.2rem;line-height:1.17;max-width:17ch}
 }
+
+/* Premium heading wrapping: never split words across lines. */
+.hero h1,.page-head h1,.split-title h2,.service-layout .main h2,.empty-state h2,.cta-band h2,.bio h2,.faq h2{hyphens:none;-webkit-hyphens:none;word-break:normal;overflow-wrap:normal}
