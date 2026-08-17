@@ -415,3 +415,128 @@ main h3 + p{margin-top:var(--text-gap-sm)}
      sheet is anchored to the viewport instead of collapsing under the logo. */
   .nav{backdrop-filter:none;-webkit-backdrop-filter:none}
 }
+
+/* ========================================================================== 
+   MB Hospitality — Premium Black / Gold brand direction (client-approved brief)
+   ========================================================================== */
+:root{
+  --paper:#0a0807;
+  --ivory:#100d0b;
+  --champagne:#17120e;
+  --champagne-2:#211a13;
+  --sand:#d3b078;
+  --bronze:#c9a24a;
+  --bronze-deep:#e2bd74;
+  --espresso:#f6efe5;
+  --ink:#ece2d4;
+  --muted:#b8aa98;
+  --muted-2:#8f806d;
+  --line:rgba(201,162,74,.14);
+  --line-strong:rgba(201,162,74,.30);
+  --shadow:0 26px 80px rgba(0,0,0,.42);
+}
+html{background:#080605;color:var(--espresso)}
+body{background:var(--paper);color:var(--ink)}
+::selection{background:rgba(201,162,74,.35);color:#fff9f0}
+.dark{background:var(--paper);color:var(--ink)}
+.light{background:var(--ivory);color:var(--ink)}
+.soft{background:var(--champagne);color:var(--ink)}
+h1,h2,h3{color:#fff4e7}.lede{color:#cfc1b0}.muted{color:var(--muted)}
+.eyebrow{color:var(--bronze-deep)}
+.text-link{color:var(--bronze-deep)}.text-link:hover{color:#fff7ec}
+.hairline path{stroke:rgba(201,162,74,.62)!important}
+
+/* Navigation: keep the logo, but make the shell feel like a luxury hotel bar. */
+.site-header{background:transparent!important}
+.nav{background:rgba(13,10,8,.88)!important;border-color:rgba(201,162,74,.24)!important;box-shadow:0 16px 45px rgba(0,0,0,.3)!important;backdrop-filter:saturate(115%) blur(13px)!important}
+.nav-link,.nav-toggle{color:#eee3d5!important}.nav-toggle:after{color:var(--bronze-deep)!important}
+.nav-contact{border-color:rgba(201,162,74,.58)!important;color:var(--bronze-deep)!important;background:rgba(201,162,74,.05)!important}
+.langs a{color:#bcae9c!important}.langs a.active{background:rgba(201,162,74,.18)!important;color:#fff8ef!important}
+.menu-btn{background:rgba(255,255,255,.04)!important;border-color:var(--line-strong)!important}
+.menu-btn span,.menu-btn:before,.menu-btn:after{background:#f3e9dc!important}
+.dropdown{background:rgba(15,12,10,.985)!important;border-color:var(--line-strong)!important;box-shadow:var(--shadow)!important}
+.dropdown a{color:#d5c6b3!important}.dropdown a:hover{background:rgba(201,162,74,.08)!important;color:#fff8ef!important}
+.btn-solid{background:var(--bronze)!important;border-color:var(--bronze)!important;color:#100c09!important}.btn-solid:hover{background:#deb864!important;border-color:#deb864!important}
+.btn-ghost{border-color:var(--line-strong)!important;color:#f2e8db!important}
+
+/* Hero: cinematic, minimal, with the supplied brand imagery. */
+.hero.hero-video{position:relative;isolation:isolate;overflow:hidden;min-height:100svh;display:flex;align-items:flex-end;padding-top:170px;padding-bottom:82px;background:#080605!important}
+.hero-bg,.hero-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero-bg{z-index:-3}.hero-overlay{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(4,3,3,.34) 0%,rgba(5,4,3,.52) 35%,rgba(5,4,3,.92) 100%)}
+.hero.hero-video:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 76% 20%,rgba(201,162,74,.08),transparent 32%)}
+.hero-shell{width:100%}.hero-main.premium-main{grid-column:1/10;max-width:940px}
+.hero-main.premium-main h1{max-width:10.5ch;color:#fff6eb;text-shadow:0 18px 48px rgba(0,0,0,.34);font-size:clamp(3.6rem,7.1vw,7rem);line-height:.98!important}
+.hero-main.premium-main .lede{max-width:61ch;color:#ded2c4;font-size:clamp(1.08rem,1.35vw,1.28rem)}
+.hero-video .hero-actions{margin-top:30px}.hero-video .text-link{color:#f0d6a2}
+.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:34px;max-width:940px}
+.hero-stats>div{padding:16px 17px 15px;border:1px solid rgba(201,162,74,.20);background:rgba(3,3,3,.24);border-radius:16px;backdrop-filter:blur(7px)}
+.hero-stats strong{display:block;margin-bottom:7px;font:600 .92rem/1.2 "Helvetica Neue",Arial,sans-serif;color:var(--bronze-deep);letter-spacing:.02em}
+.hero-stats span{display:block;font-size:.83rem;line-height:1.48;color:#d1c3b1}
+.hero-video .kicker{margin-top:24px;color:#b9aa98;letter-spacing:.01em}
+
+/* New brand narrative blocks. */
+.statement-block{grid-column:2/12;max-width:1040px}
+.statement-block h2{max-width:17ch}.statement-block .lede{max-width:70ch}
+.brand-principles{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.brand-principles span,.journey-strip span{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid var(--line-strong);border-radius:999px;background:rgba(201,162,74,.045);color:var(--bronze-deep);font:600 .68rem/1.15 "Helvetica Neue",Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.premium-process-grid{grid-column:1/-1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:6px}
+.premium-process-grid.long{grid-template-columns:repeat(5,minmax(0,1fr))}
+.premium-step{min-height:260px;padding:23px 20px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.008));box-shadow:0 18px 55px rgba(0,0,0,.18)}
+.premium-step>span{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;margin-bottom:21px;background:rgba(201,162,74,.11);border:1px solid rgba(201,162,74,.20);color:var(--bronze-deep);font:600 .78rem/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.07em}
+.premium-step h3{font-size:1.4rem;line-height:1.15;margin-bottom:12px}.premium-step p{font-size:.94rem;line-height:1.63;color:#cbbdac}
+.expertise-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:27px}
+.expertise-card{padding:22px 23px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.018)}
+.expertise-card h3{font-size:1.36rem;margin-bottom:11px}.expertise-card p{color:#c7b9a8;line-height:1.61;margin-bottom:0}.note{margin-top:22px!important;font-size:.92rem}
+.image-card-grid{display:grid;gap:18px;margin-top:34px}.image-card-grid.three-up{grid-template-columns:repeat(3,minmax(0,1fr))}
+.image-card{overflow:hidden;border:1px solid var(--line);border-radius:26px;background:#100d0b;box-shadow:0 20px 60px rgba(0,0,0,.22)}
+.image-card img{width:100%;aspect-ratio:1.08/1;object-fit:cover;filter:saturate(.92) contrast(1.04)}
+.image-card>div{padding:23px}.image-card h3{margin-bottom:10px}.image-card p{min-height:4.8em;color:#c8baa9;line-height:1.6}
+.journey-copy{grid-column:1/9}.journey-strip{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}
+.media-mosaic{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.media-mosaic.two-up{grid-template-columns:repeat(2,minmax(0,1fr))}
+.media-card{margin:0;min-height:330px;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:#0b0907;box-shadow:0 22px 62px rgba(0,0,0,.22)}
+.media-card img{width:100%;height:100%;min-height:330px;object-fit:cover;filter:saturate(.9) contrast(1.04)}
+.instagram-panel{grid-column:2/12;padding:34px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(201,162,74,.065),rgba(255,255,255,.012))}
+.instagram-panel h2{max-width:16ch}.insta-placeholder{margin-top:27px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 21px;border:1px dashed var(--line-strong);border-radius:18px;background:rgba(0,0,0,.14)}
+.insta-placeholder span{color:#fff3e5;font:600 .96rem/1.2 "Helvetica Neue",Arial,sans-serif}.insta-placeholder small{padding:8px 11px;border-radius:999px;background:rgba(201,162,74,.12);color:var(--bronze-deep);font:600 .66rem/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.premium-empty{padding-top:0!important}.quote-line{margin-top:28px!important;color:#fff0dc;font:400 clamp(1.75rem,2.9vw,2.7rem)/1.13 "Bodoni 72","Bodoni MT",Didot,"Times New Roman",serif}
+
+/* Premium heads on all service/sector pages: supplied photography + dark cinematic overlay. */
+.page-head{background:#090706!important}.page-head.dark{position:relative;overflow:hidden;min-height:440px;display:flex;align-items:flex-end}.page-head.dark:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,5,4,.92) 0%,rgba(6,5,4,.70) 53%,rgba(6,5,4,.55) 100%);z-index:0}.page-head .wrap{position:relative;z-index:1}
+.page-head.dark h1{color:#fff4e7}.page-head.dark .lede{color:#d4c6b5}
+.premium-head{padding-top:154px;padding-bottom:100px}.premium-head.has-media .wrap{align-items:center}.premium-head .head-copy{grid-column:1/7}.premium-head.has-media .head-media{grid-column:8/13}.premium-head .head-media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:26px;border:1px solid var(--line);box-shadow:var(--shadow)}
+body[data-route="services"] .page-head.dark{background:url('/assets/img/premium/04-reception.avif') center/cover no-repeat!important}
+body[data-route="consulting"] .page-head.dark{background:url('/assets/img/premium/09-lobby-marble.avif') center/cover no-repeat!important}
+body[data-route="training"] .page-head.dark{background:url('/assets/img/premium/06-alpine-restaurant.avif') center/cover no-repeat!important}
+body[data-route="fb"] .page-head.dark{background:url('/assets/img/premium/10-restaurant-gold.avif') center/cover no-repeat!important}
+body[data-route="standards"] .page-head.dark{background:url('/assets/img/premium/02-table.avif') center/cover no-repeat!important}
+body[data-route="preopening"] .page-head.dark{background:url('/assets/img/premium/04-reception.avif') center/cover no-repeat!important}
+body[data-route="development"] .page-head.dark{background:url('/assets/img/premium/16-alpine-hotel.avif') center/cover no-repeat!important}
+body[data-route="industries"] .page-head.dark{background:url('/assets/img/premium/16-alpine-hotel.avif') center/cover no-repeat!important}
+body[data-route="hotels"] .page-head.dark{background:url('/assets/img/premium/17-alpine-pool.avif') center/cover no-repeat!important}
+body[data-route="restaurants"] .page-head.dark{background:url('/assets/img/premium/05-alpine-dining.avif') center/cover no-repeat!important}
+body[data-route="bars"] .page-head.dark{background:url('/assets/img/premium/11-bar-opulent.avif') center/cover no-repeat!important}
+body[data-route="contact"] .page-head.dark{background:url('/assets/img/premium/08-alpine-lounge.avif') center/cover no-repeat!important}
+
+/* Existing components re-toned. */
+.industry,.subcard,.case-shell{background:rgba(255,255,255,.014)!important;border-color:var(--line)!important}.industry p,.subcard p{color:#c8b9a8!important}
+.leader{border-color:var(--line)!important}.leader small{color:#a99a87!important}.dots{background-image:radial-gradient(circle,var(--bronze) 1px,transparent 1.2px)!important}
+.process-step{border-color:var(--line)!important}.process-step p{color:#c9baa8!important}.process-number{color:rgba(201,162,74,.22)!important}
+.timeline-item{border-color:var(--line)!important}.timeline-year{color:var(--bronze-deep)!important}.bullet-list li{border-color:var(--line)!important;color:#cbbcab!important}
+.faq details{border-color:var(--line)!important}.faq summary{color:#f1e5d6!important}.faq details p{color:#c5b6a5!important}
+.field input,.field select,.field textarea{background:#12100d!important;color:#f5ede2!important;border-color:var(--line-strong)!important}.field label{color:#cbbda9!important}.check{color:#b8aa97!important}
+.map-shell{background:#14100d!important;border-color:var(--line)!important}.map-shell .map-load{background:rgba(14,11,9,.94)!important;color:#f3e9dc!important;border-color:var(--line-strong)!important}
+.notice{background:rgba(201,162,74,.055)!important}.legal{color:#c7b9a8!important}.legal h2,.legal h3{color:#f1e5d6!important}
+.cta-band.dark{background:#080605!important}.cta-band.dark:before{border-color:rgba(201,162,74,.12)!important}.cta-band .lede{color:#cfc1b0!important}.cta-band .btn-solid{background:var(--bronze)!important;border-color:var(--bronze)!important;color:#100c09!important}
+.footer{background:#070605!important}.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr 1fr!important}.footer h3{color:var(--bronze-deep)!important}.footer a,.footer address,.footer-social-pending{color:#ad9f8d!important;font-size:.86rem}.footer-social-pending{display:block;margin-top:10px}.footer-bottom{border-color:rgba(255,255,255,.08)!important}
+.route-visual{padding-block:45px!important}.route-visual img{width:100%;max-height:620px;object-fit:cover;border-radius:28px;border:1px solid var(--line);filter:saturate(.9) contrast(1.04);box-shadow:var(--shadow)}
+
+/* Responsive safety. */
+@media(max-width:1120px){
+  .nav-main{background:rgba(12,10,8,.985)!important;border-color:var(--line-strong)!important}.nav-main .nav-link,.nav-main .nav-toggle{color:#f0e5d7!important}.nav-main .nav-contact{background:rgba(201,162,74,.07)!important}
+  .hero-main.premium-main{grid-column:1/-1}.hero-stats{grid-template-columns:1fr 1fr}.premium-process-grid,.premium-process-grid.long{grid-template-columns:1fr 1fr}.image-card-grid.three-up{grid-template-columns:1fr}.media-mosaic{grid-template-columns:1fr 1fr}.statement-block,.instagram-panel,.premium-head .head-copy,.premium-head.has-media .head-media{grid-column:1/-1}.premium-head.has-media .head-media{margin-top:30px}.footer-grid{grid-template-columns:2fr 1fr 1fr!important}.footer-grid>div:last-child{grid-column:auto!important}
+}
+@media(max-width:720px){
+  .hero.hero-video{min-height:92svh;padding-top:134px;padding-bottom:58px}.hero-main.premium-main h1{font-size:clamp(3.05rem,14vw,4.55rem);max-width:100%}.hero-main.premium-main .lede{font-size:1rem}.hero-stats{grid-template-columns:1fr;margin-top:22px}.hero-stats>div{padding:14px 15px}.brand-principles{gap:7px}.brand-principles span,.journey-strip span{font-size:.61rem;padding:9px 11px}
+  .premium-process-grid,.premium-process-grid.long,.expertise-grid,.media-mosaic,.media-mosaic.two-up{grid-template-columns:1fr}.premium-step{min-height:auto}.image-card img{aspect-ratio:1.3/1}.image-card p{min-height:0}.instagram-panel{padding:25px}.insta-placeholder{flex-direction:column;align-items:flex-start}.journey-copy{grid-column:1/-1}.premium-head{padding-top:132px;padding-bottom:76px}.page-head.dark{min-height:370px}.premium-head .head-media img{aspect-ratio:4/4.8}.route-visual{padding-block:25px!important}.route-visual img{border-radius:20px;max-height:440px}.footer-grid{grid-template-columns:1fr 1fr!important}.future-instagram{grid-column:auto!important}
+}
+@media(max-width:420px){.footer-grid{grid-template-columns:1fr!important}.future-instagram{grid-column:1/-1!important}}
+@media(prefers-reduced-motion:reduce){.hero-bg video{display:none}.hero-bg{background:url('/assets/img/premium/hero-poster.avif') center/cover no-repeat}}
